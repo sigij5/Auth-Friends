@@ -7,9 +7,9 @@ export const Friend = props => {
 
     return(
         <div className='friend'>
-            <h3>{friend.name}</h3>
-            <p>{friend.age}</p>
-            <p>{friend.email}</p>
+            <h3 className='name'>{friend.name}</h3>
+            <p className='age'>{friend.age} years old</p>
+            <p className='email'>{friend.email}</p>
         </div>
     )
 }

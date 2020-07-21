@@ -12,12 +12,14 @@ function App() {
     <div className="App">
       <header className="App-header">
           <h1>Friends App</h1>
-          <Link to='/login'>Login</Link>
+          <Link className='link' to='/login'>Login</Link>
       </header>
+      <body className='app-body'>
       <Switch>
         <Route path='/login' component={Login} />
         <PrivateRoute exact path='/friendslist' component={FriendsList} />
       </Switch>
+      </body>
 
 
     </div>
